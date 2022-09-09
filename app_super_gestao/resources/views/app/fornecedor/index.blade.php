@@ -1,15 +1,5 @@
 <h3>fornecedor</h3>
 
-{{-- Comentario --}}
-
-
-@php
-//if()
-//{}else{}
-@endphp
-
-{{-- @dd($fornecedores); --}}
-
 
 @isset($fornecedores)
     @forelse ($fornecedores as $valor )
