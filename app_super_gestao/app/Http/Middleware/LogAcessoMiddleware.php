@@ -20,6 +20,9 @@ class LogAcessoMiddleware
         $ip = $request->server('REMOTE_ADDR');
         $rota = $request->getRequestUri();
         LogAcesso::create(['log'=>"ip {$ip} equisitou a rota {$rota}"]);
-        return $next($request);
+        // return $next($request);
+        $resposta = $next($request);
+        $resposta->setStatusCode(403, 'O status da resposta e o texto da resposta foram modificados');
+        dd($resposta);
     }
 }

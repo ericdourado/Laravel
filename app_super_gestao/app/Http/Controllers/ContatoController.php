@@ -14,6 +14,7 @@ class ContatoController extends Controller
     { 
         $motivo_contatos = MotivoContato::all();
         return view("site.contato", ['motivo_contatos' => $motivo_contatos]);
+
     }
     public function salvar(Request $request){
         
