@@ -10,9 +10,9 @@
         <form action={{route('site.login')}} method='post'>
             @csrf
             <input name='usuario' value="{{old('usuario') }}" type='text' placeholder='Usuário' class='borda-preta'>
-            {{$errors->has('usuario') ? $errors->first('usuario') : ''}};
+            {{$errors->has('usuario') ? $errors->first('usuario') : '' }}
             <input name='senha' value="{{old('usuario') }}" type='password' placeholder='Password' class='borda-preta'>
-            {{$errors->has('senha') ? $errors->first('senha') : ''}};
+            {{$errors->has('senha') ? $errors->first('senha') : ''}}
             <button type='submit' class='borda-preta'>Acessar</button>
         </form>
         {{ isset($erro) && $erro != '' ? $erro : '' }}
@@ -28,9 +28,9 @@
     </div>
     <div class="area-contato">
         <h2>Contato</h2>
-        <span>(11) 3333-4444</span>
+        <span>(27) 99694-8351</span>
         <br>
-        <span>supergestao@dominio.com.br</span>
+        <span>ericdourado@hotmail.com</span>
     </div>
     <div class="localizacao">
         <h2>Localização</h2>
